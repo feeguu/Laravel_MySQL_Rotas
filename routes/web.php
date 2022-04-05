@@ -13,4 +13,11 @@ use App\Http\Controllers\UsuarioController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', [UsuarioController::class, 'cadastrar']);
+Route::get('/', function() {
+    return "Minha primeira rota";
+});
+
+
+Route::get('contato', function() {
+    return "Minha segundo rota";
+});
